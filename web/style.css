@@ -57,11 +57,10 @@ img {
     margin: 15px auto;
 }
 
-.grafik {
-    display: block;
-    max-width: 100%;
-    margin: 15px auto;
-    border-radius: 8px;
+.note {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
 }
 
 table {
@@ -81,25 +80,19 @@ th {
     color: white;
 }
 
-#logTable {
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
-    border-collapse: collapse;
-    font-size: 14px;
-}
-
-#logTable th,
-#logTable td {
-    border: 1px solid #ccc;
-    padding: 6px;
+footer {
     text-align: center;
+    margin-top: 30px;
+    color: #777;
 }
 
-#logTable th {
-    background-color: #696666;
-    color: white;
+.grafik {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
 }
+
 
 .visual-box {
     width: 400px;
@@ -113,7 +106,6 @@ th {
     background: #f9f9f9;
     display: block;
 }
-
 
 .visual-controls {
     margin-top: 10px;
@@ -141,6 +133,7 @@ th {
     cursor: pointer;
 }
 
+
 .visual-controls .btn-start {
     background-color: #28a745;
 }
@@ -148,6 +141,7 @@ th {
 .visual-controls .btn-start:hover {
     background-color: #218838;
 }
+
 
 .visual-controls .btn-reset {
     background-color: #dc3545;
@@ -161,8 +155,22 @@ th {
     background-color: #005fa3;
 }
 
-footer {
+#logTable {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#logTable th,
+#logTable td {
+    border: 1px solid #ccc;
+    padding: 6px;
     text-align: center;
-    margin-top: 30px;
-    color: #777;
+}
+
+#logTable th {
+    background-color: #696666;
+    color: white;
 }
