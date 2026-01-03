@@ -86,17 +86,45 @@ function toCanvasY(y) {
 
 
 function drawAxes() {
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 1;
+    ctx.font = "12px Arial";
+    ctx.fillStyle = "#000";
 
+    ctx.beginPath();
+    ctx.moveTo(padding, padding - r);
+    ctx.lineTo(padding, canvas.height - padding);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(padding, canvas.height - padding);
+    ctx.lineTo(canvas.width - padding, canvas.height - padding);
+    ctx.stroke();
 
     for (let i = 0; i <= 5; i++) {
+        const yVal = (maxHeight / 5) * i;
+        const yPos = toCanvasY(yVal);
 
+        ctx.beginPath();
+        ctx.moveTo(padding - 5, yPos);
+        ctx.lineTo(padding + 5, yPos);
+        ctx.stroke();
+
+        ctx.fillText(yVal.toFixed(0), padding - 40, yPos + 4);
     }
 
-        for (let i = -1; i <= 1; i += 0.5) {
+    for (let i = -1; i <= 1; i += 0.5) {
+        const xPos = toCanvasX(i);
 
-        }
+        ctx.beginPath();
+        ctx.moveTo(xPos, canvas.height - padding - 5);
+        ctx.lineTo(xPos, canvas.height - padding + 5);
+        ctx.stroke();
+        ctx.fillText(i.toFixed(1), xPos - 10, canvas.height - padding + 20);
+    }
 
 }
+
 
 startBtn.addEventListener("click", () => {
 
