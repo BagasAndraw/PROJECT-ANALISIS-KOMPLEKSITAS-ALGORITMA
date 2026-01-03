@@ -76,7 +76,12 @@ function toCanvasX(x) {
 }
 
 function toCanvasY(y) {
-
+    return (
+        canvas.height -
+        padding -
+        (y / maxHeight) * (canvas.height - 2 * padding) -
+        r
+    );
 }
 
 
