@@ -64,3 +64,40 @@ img {
     border-radius: 8px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #696666;
+    color: white;
+}
+
+#logTable {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#logTable th,
+#logTable td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+#logTable th {
+    background-color: #696666;
+    color: white;
+}
+
