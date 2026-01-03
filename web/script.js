@@ -149,5 +149,34 @@ resetBtn.addEventListener("click", () => {
 y = Number(document.getElementById("h0").value);
 draw();
 
+fetch("data/hasil_pengukuran.csv")
+    .then(response => response.text())
+    .then(csv => {
+        const rows = csv.trim().split("\n").slice(1);
+        const tbody = document.querySelector("#timeTable tbody");
 
+        let waktu = {};
 
+       rows.forEach(row => {
+            const cols = row.split(",");
+
+            const metode = cols[0];
+            const nilaiWaktu = parseFloat(cols[1]); 
+
+            waktu[metode] = nilaiWaktu;
+
+            if (metode !== "Selisih") {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td>${metode}</td>
+                    <td>${nilaiWaktu.toFixed(8)}</td>
+                `;
+                tbody.appendChild(tr);
+            }
+        });
+
+        if (waktu["Selisih"] !== undefined) {
+            document.getElementById("selisihText").innerText =
+                "Selisih waktu eksekusi: " + waktu["Selisih"].toFixed(8) + " detik";
+        }
+    });

@@ -1,0 +1,4 @@
+Metode,Waktu Rata-rata (detik),Jumlah Pantulan,Jumlah Pengulangan
+Iteratif,5.40799977898132e-07,14,1000
+Rekursif,7.332000132009852e-07,14,1000
+Selisih,1.924000353028532e-07,-,-
