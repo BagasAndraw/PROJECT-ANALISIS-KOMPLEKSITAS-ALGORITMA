@@ -9,8 +9,6 @@
 <body>
 
 <div class="container">
-
-    <!-- HEADER -->
     <header>
         <h1>
             Analisis Kompleksitas Algoritma Iteratif dan Rekursif<br>
@@ -23,6 +21,11 @@
 
     <section class="box">
         <h2>Deskripsi Studi Kasus</h2>
+        <p>
+            Simulasi ini bertujuan untuk membandingkan kompleksitas waktu dan ruang
+            antara algoritma iteratif dan rekursif dalam memodelkan gerak bola pantul
+            berdasarkan koefisien elastisitas.
+        </p>
     </section>
 
     <section class="box">
@@ -31,6 +34,27 @@
 
     <section class="box">
         <h2>Perbandingan Hasil Simulasi</h2>
+        <img src="assets/grafik_pantulan.png" alt="Grafik Tinggi Pantulan Iteratif vs Rekursif">
+        <p class="note">
+            Grafik menunjukkan bahwa algoritma iteratif dan rekursif menghasilkan
+            pola pantulan yang identik.
+        </p>
+        <table>
+            <tr>
+                <th>Pantulan ke-n</th>
+                <th>Iteratif (m)</th>
+                <th>Rekursif (m)</th>
+            </tr>
+            <tr>
+                <td>1</td><td>10.00</td><td>10.00</td>
+            </tr>
+            <tr>
+                <td>2</td><td>6.00</td><td>6.00</td>
+            </tr>
+            <tr>
+                <td>3</td><td>3.60</td><td>3.60</td>
+            </tr>
+        </table>
     </section>
 
     <section class="box">
@@ -38,7 +62,46 @@
     </section>
 
     <section class="box">
-        <h2>Eksperimen Variasi Ukuran Input</h2>
+        <h2>Eksperimen Variasi Ukuran Input Terhadap h0</h2>
+
+        <img src="assets/grafik_pantulan_vs_h0.png" alt="Grafik Waktu Eksekusi vs Tinggi Awal"class="grafik">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tinggi Awal (h₀)</th>
+                    <th>Iteratif (detik)</th>
+                    <th>Rekursif (detik)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>200</td>
+                    <td>0.00000310</td>
+                    <td>0.00000450</td>
+                </tr>
+                <tr>
+                    <td>300</td>
+                    <td>0.00000320</td>
+                    <td>0.00000460</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>0.00000340</td>
+                    <td>0.00000480</td>
+                </tr>
+                <tr>
+                    <td>600</td>
+                    <td>0.00000350</td>
+                    <td>0.00000490</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            Nilai waktu eksekusi diperoleh dari hasil rata-rata beberapa kali
+            pengulangan pengujian untuk mengurangi pengaruh sistem.
+        </p>
     </section>
 
     <section class="box">
@@ -47,6 +110,23 @@
 
     <section class="box">
         <h2>Ringkasan Kompleksitas</h2>
+        <table>
+            <tr>
+                <th>Algoritma</th>
+                <th>Kompleksitas Waktu</th>
+                <th>Kompleksitas Ruang</th>
+            </tr>
+            <tr>
+                <td>Iteratif</td>
+                <td>O(n)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td>Rekursif</td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+            </tr>
+        </table>
     </section>
 
     <section class="box">
