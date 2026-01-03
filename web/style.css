@@ -113,3 +113,56 @@ th {
     background: #f9f9f9;
     display: block;
 }
+
+
+.visual-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.visual-controls label {
+    font-size: 13px;
+}
+
+.visual-controls input {
+    width: 60px;
+    padding: 4px;
+}
+
+.visual-controls button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2179d0;
+    color: white;
+    cursor: pointer;
+}
+
+.visual-controls .btn-start {
+    background-color: #28a745;
+}
+
+.visual-controls .btn-start:hover {
+    background-color: #218838;
+}
+
+.visual-controls .btn-reset {
+    background-color: #dc3545;
+}
+
+.visual-controls .btn-reset:hover {
+    background-color: #c82333;
+}
+
+.visual-controls button:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
