@@ -4,47 +4,51 @@ from iteratif import pantulan_iteratif
 from rekursif import pantulan_rekursif
 from ukur_waktu import ukur_waktu
 
-# PARAMETER GLOBAL
-h_min = 0.0
-e = 0.0
+h_min = 0.01
+e = 0.6
 
+# -------------------------------
+# Eksperimen 1: Jumlah pantulan vs e
+# -------------------------------
+h0 = 300
+e_values = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
+pantulan_counts = []
 
-def eksperimen_jumlah_pantulan():
-    """
-    Eksperimen 1:
-    Pengaruh koefisien elastisitas (e) terhadap jumlah pantulan
-    """
-    h0 = 0
-    e_values = []
-    pantulan_counts = []
+for e_val in e_values:
+    hasil = pantulan_iteratif(h0, e_val, h_min)
+    pantulan_counts.append(len(hasil))
 
-    # TODO: loop perhitungan jumlah pantulan
+plt.plot(e_values, pantulan_counts, marker='o')
+plt.xlabel("Koefisien Elastisitas (e)")
+plt.ylabel("Jumlah Pantulan")
+plt.title("Pengaruh koefisien (e) terhadap Jumlah Pantulan")
+plt.grid(True)
+plt.show()
 
-    # TODO: visualisasi grafik
-    plt.figure()
-    plt.show()
+# -------------------------------
+# Eksperimen 2: Waktu vs h0
 
+h0_values = [200, 300, 500, 600]
+iter_times = []
+rek_times = []
 
-def eksperimen_waktu_eksekusi():
-    """
-    Eksperimen 2:
-    Pengaruh tinggi awal (h0) terhadap waktu eksekusi
-    """
-    h0_values = []
-    iter_times = []
-    rek_times = []
+for h0_val in h0_values:
+    iter_times.append(
+        ukur_waktu(pantulan_iteratif, h0_val, e, h_min)
+    )
+    rek_times.append(
+        ukur_waktu(pantulan_rekursif, h0_val, e, h_min)
+    )
 
-    # TO DO: loop pengukuran waktu iteratif & rekursif
+plt.figure(figsize=(7, 5))
+plt.plot(h0_values, iter_times, marker='o', label="Iteratif")
+plt.plot(h0_values, rek_times, marker='x', linestyle='--', label="Rekursif")
 
-    # TO DO: visualisasi grafik
-    plt.figure()
-    plt.show()
-
-
-def main():
-    eksperimen_jumlah_pantulan()
-    eksperimen_waktu_eksekusi()
-
-
-if __name__ == "__main__":
-    main()
+plt.xlabel("Tinggi Awal (h₀)")
+plt.ylabel("Waktu Eksekusi (detik)")
+plt.title("Pengaruh Tinggi Awal (h₀) terhadap Waktu Eksekusi")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.ticklabel_format(style='plain', axis='y')
+plt.show()
