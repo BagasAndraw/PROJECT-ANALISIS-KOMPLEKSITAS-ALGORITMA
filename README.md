@@ -72,22 +72,30 @@ Hasil eksperimen disajikan dalam bentuk grafik dan tabel untuk mempermudah anali
 
 ## Struktur Project
 ```
-project/
-├── iteratif.py
-├── rekursif.py
-├── ukur_waktu.py
-├── eksperimen_variatif.py
+PROJECT-BOLA-PANTUL/
+├── analysis/
+│   ├── __pycache__/
+│   ├── grafik_pantulan.py
+│   ├── iteratif.py
+│   ├── rekursif.py
+│   └── ukur_waktu.py
 │
-├── hasil_pengukuran.csv
+├── web/
+│   ├── assets/
+│   │   ├── grafik_pantulan_vs_e.png
+│   │   ├── grafik_pantulan_vs_h0.png
+│   │   ├── grafik_pantulan.png
+│   │   └── grafik_perbandingan_waktu.png
+│   │
+│   ├── data/
+│   │   └── hasil_pengukuran.csv
+│   │
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 │
-└── web/
-    ├── index.html
-    ├── style.css
-    ├── script.js
-    └── assets/
-        ├── grafik_waktu.png
-        ├── grafik_pantulan.png
-        └── grafik_variatif.png
+└── README.md
+
 ```
 
 ---
