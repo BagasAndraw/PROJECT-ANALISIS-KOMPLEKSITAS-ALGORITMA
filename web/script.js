@@ -72,7 +72,7 @@ function update() {
 }
 
 function toCanvasX(x) {
-  
+    return padding + (x - xMin) / (xMax - xMin) * (canvas.width - 2 * padding);
 }
 
 function toCanvasY(y) {
