@@ -54,13 +54,7 @@ canvas {
 img {
     display: block;
     max-width: 100%;
-    margin: 15px auto;
-}
-
-.note {
-    font-size: 14px;
-    color: #555;
-    text-align: center;
+    margin: auto;
 }
 
 table {
@@ -70,14 +64,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
     text-align: center;
-}
-
-th {
-    background-color: #696666;
-    color: white;
 }
 
 footer {
