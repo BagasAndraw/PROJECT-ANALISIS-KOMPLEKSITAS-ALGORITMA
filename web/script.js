@@ -141,7 +141,9 @@ startBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-
+    bounceCount = 0;
+    bounceText.textContent = bounceCount;
+    logBody.innerHTML = ""; 
 });
 
 y = Number(document.getElementById("h0").value);
