@@ -125,9 +125,19 @@ function drawAxes() {
 
 }
 
-
 startBtn.addEventListener("click", () => {
+    y = Number(document.getElementById("h0").value);
+    maxHeight = y;
+    e = Number(document.getElementById("e").value);
+    v = 0;
 
+    bounceCount = 0;
+    bounceText.textContent = bounceCount;
+
+    stopped = false;
+
+    if (animationId) cancelAnimationFrame(animationId);
+    update();
 });
 
 resetBtn.addEventListener("click", () => {
