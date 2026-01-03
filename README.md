@@ -2,9 +2,7 @@
 ## pada Simulasi Gerak Bola Pantul
 
 ## Deskripsi Studi Kasus
-Proyek ini merupakan tugas besar mata kuliah Analisis Algoritma yang bertujuan untuk menganalisis dan membandingkan efisiensi algoritma iteratif dan rekursif dalam menyelesaikan suatu studi kasus, yaitu simulasi gerak bola pantul.
-
-Simulasi bola pantul menggambarkan pergerakan sebuah bola yang dijatuhkan dari ketinggian awal tertentu dan memantul berulang kali dengan tinggi pantulan yang menurun berdasarkan koefisien elastisitas. Proyek ini tidak hanya menampilkan simulasi secara visual, tetapi juga menganalisis kompleksitas waktu dan running time dari kedua algoritma.
+Proyek ini merupakan tugas besar mata kuliah Analisis Algoritma yang bertujuan untuk menganalisis dan membandingkan efisiensi algoritma iteratif dan rekursif dalam menyelesaikan suatu studi kasus, yaitu simulasi gerak bola pantul. Simulasi bola pantul menggambarkan pergerakan sebuah bola yang dijatuhkan dari ketinggian awal tertentu dan memantul berulang kali dengan tinggi pantulan yang menurun berdasarkan koefisien elastisitas. Proyek ini tidak hanya menampilkan simulasi secara visual, tetapi juga menganalisis kompleksitas waktu dan running time dari kedua algoritma.
 
 ---
 
