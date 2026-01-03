@@ -7,9 +7,6 @@ from ukur_waktu import ukur_waktu
 h_min = 0.01
 e = 0.6
 
-# -------------------------------
-# Eksperimen 1: Jumlah pantulan vs e
-# -------------------------------
 h0 = 300
 e_values = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
 pantulan_counts = []
@@ -24,9 +21,6 @@ plt.ylabel("Jumlah Pantulan")
 plt.title("Pengaruh koefisien (e) terhadap Jumlah Pantulan")
 plt.grid(True)
 plt.show()
-
-# -------------------------------
-# Eksperimen 2: Waktu vs h0
 
 h0_values = [200, 300, 500, 600]
 iter_times = []
