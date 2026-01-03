@@ -54,7 +54,13 @@ canvas {
 img {
     display: block;
     max-width: 100%;
-    margin: auto;
+    margin: 15px auto;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
 }
 
 table {
@@ -64,7 +70,14 @@ table {
 }
 
 th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
     text-align: center;
+}
+
+th {
+    background-color: #696666;
+    color: white;
 }
 
 footer {
@@ -79,7 +92,6 @@ footer {
     margin: 15px auto;
     border-radius: 8px;
 }
-
 
 .visual-box {
     width: 400px;
@@ -120,7 +132,6 @@ footer {
     cursor: pointer;
 }
 
-
 .visual-controls .btn-start {
     background-color: #28a745;
 }
@@ -128,7 +139,6 @@ footer {
 .visual-controls .btn-start:hover {
     background-color: #218838;
 }
-
 
 .visual-controls .btn-reset {
     background-color: #dc3545;
@@ -155,8 +165,6 @@ footer {
     border: 1px solid #ccc;
     padding: 6px;
     text-align: center;
-    margin-top: 30px;
-    color: #777;
 }
 
 #logTable th {
