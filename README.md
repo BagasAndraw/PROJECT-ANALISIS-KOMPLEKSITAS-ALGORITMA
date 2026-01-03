@@ -1,5 +1,5 @@
 # Analisis Kompleksitas Algoritma Iteratif dan Rekursif  
-# pada Simulasi Gerak Bola Pantul
+## pada Simulasi Gerak Bola Pantul
 
 ## Deskripsi Studi Kasus
 Proyek ini merupakan tugas besar mata kuliah Analisis Algoritma yang bertujuan untuk menganalisis dan membandingkan efisiensi algoritma iteratif dan rekursif dalam menyelesaikan suatu studi kasus, yaitu simulasi gerak bola pantul.
@@ -41,7 +41,7 @@ Kedua algoritma menghasilkan keluaran yang sama, sehingga perbandingan difokuska
 
 ---
 
-## 🖥️ Aplikasi (Visualisasi)
+## Visualisasi
 Aplikasi dibuat dalam bentuk website sederhana menggunakan HTML, CSS, dan JavaScript (Canvas). Fitur visualisasi yang disediakan meliputi:
 - Simulasi live gerak bola pantul
 - Input interaktif nilai `h0` dan `e`
