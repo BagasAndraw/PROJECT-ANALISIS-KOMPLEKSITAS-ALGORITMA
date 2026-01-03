@@ -33,7 +33,7 @@ function draw() {
     ctx.beginPath();
     ctx.arc(cx, cy, r, 0, Math.PI * 2);
     ctx.fillStyle = "#0077cc";
-    ctx.fill();
+    ctx.fill(); 
 }
 
 function update() {
