@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e4e8;
+    color: #333;
 }
 
 .container {
@@ -11,40 +13,156 @@ body {
 
 header {
     text-align: center;
-}
-
-.box {
+    background: white;
+    padding: 20px;
     margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 h1 {
     font-size: 26px;
+    line-height: 1.4;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 8px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 h2 {
     margin-top: 0;
+    border-left: 5px solid #e2e2e2;
+    padding-left: 10px;
 }
 
 canvas {
     display: block;
-    margin: auto;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border: 2px solid #333;
 }
 
 img {
     display: block;
     max-width: 100%;
-    margin: auto;
+    margin: 15px auto;
+}
+
+.grafik {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 15px;
 }
 
 th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
     text-align: center;
+}
+
+th {
+    background-color: #696666;
+    color: white;
+}
+
+#logTable {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#logTable th,
+#logTable td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+#logTable th {
+    background-color: #696666;
+    color: white;
+}
+
+.visual-box {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.visual-box canvas {
+    width: 100%;
+    border: 2px solid #333;
+    background: #f9f9f9;
+    display: block;
+}
+
+
+.visual-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.visual-controls label {
+    font-size: 13px;
+}
+
+.visual-controls input {
+    width: 60px;
+    padding: 4px;
+}
+
+.visual-controls button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2179d0;
+    color: white;
+    cursor: pointer;
+}
+
+.visual-controls .btn-start {
+    background-color: #28a745;
+}
+
+.visual-controls .btn-start:hover {
+    background-color: #218838;
+}
+
+.visual-controls .btn-reset {
+    background-color: #dc3545;
+}
+
+.visual-controls .btn-reset:hover {
+    background-color: #c82333;
+}
+
+.visual-controls button:hover {
+    background-color: #005fa3;
 }
 
 footer {
     text-align: center;
+    margin-top: 30px;
+    color: #777;
 }
