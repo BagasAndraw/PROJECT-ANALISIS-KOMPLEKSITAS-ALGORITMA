@@ -37,7 +37,38 @@ function draw() {
 }
 
 function update() {
+    if (stopped) return;
 
+    v += g;
+    y -= v;
+
+    if (y <= 0) {
+        y = 0;
+
+        if (Math.abs(v) > MIN_BOUNCE_VELOCITY) {
+            v = -v * e;
+            bounceCount++;
+            bounceText.textContent = bounceCount;
+
+            const tinggiPantulan = (v * v) / (2 * g);
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${bounceCount}</td>
+                <td>${tinggiPantulan.toFixed(2)}</td>
+            `;
+            logBody.appendChild(row);
+
+        } else {
+            stopped = true;
+            v = 0;
+            draw();
+            return;
+        }
+    }
+
+    draw();
+    animationId = requestAnimationFrame(update);
 }
 
 function toCanvasX(x) {
