@@ -44,3 +44,23 @@ h2 {
     padding-left: 10px;
 }
 
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border: 2px solid #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+.grafik {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
